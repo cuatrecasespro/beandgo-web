@@ -40,7 +40,7 @@ export const translations = {
       procedures: [
         'Sol·licitud i renovació llicència turística',
         'Obtenció NRA (Número Únic de Registre Lloguer de curta durada)',
-        'Informe anual de lloguers de curta durada',
+        'Dipòsit anual de lloguers de curta durada',
         'Canvi explotador / propietari / nom comercial VUT',
         'Sol·licitud i renovació cèdules habitabilitat',
         'Reclamacions',
@@ -103,7 +103,7 @@ export const translations = {
       procedures: [
         'Solicitud y renovación licencia turística',
         'Obtención NRA (Número Único de Registro Alquiler de corta duración)',
-        'Informe anual de alquileres de corta duración',
+        'Depósito anual de alquileres de corta duración',
         'Cambio explotador / propietario / nombre comercial VUT',
         'Solicitud y renovación cédulas habitabilidad',
         'Reclamaciones',
@@ -166,7 +166,7 @@ export const translations = {
       procedures: [
         'Tourism license application and renewal',
         'NRA procurement (Short-term Rental Unique Registration Number)',
-        'Annual short-term rental report',
+        'Annual deposit for short-term rentals',
         'Operator / owner / VUT commercial name change',
         'Habitability certificate application and renewal',
         'Claims',
