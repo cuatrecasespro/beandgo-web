@@ -1,13 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 
 interface HeroProps {
   onShowServices: () => void;
-  onShowForm: () => void;
 }
 
-const Hero: React.FC<HeroProps> = ({ onShowServices, onShowForm }) => {
+const Hero: React.FC<HeroProps> = ({ onShowServices }) => {
   const { t } = useLanguage();
+  const navigate = useNavigate();
 
   return (
     <section className="relative h-[90vh] min-h-[600px] flex items-center justify-center text-center overflow-hidden bg-white">
@@ -40,7 +41,7 @@ const Hero: React.FC<HeroProps> = ({ onShowServices, onShowForm }) => {
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <button
-            onClick={onShowForm}
+            onClick={() => navigate('/propietaris')}
             className="bg-accent text-white text-base font-semibold px-10 py-4 rounded-full hover:bg-red-800 transition-all shadow-xl shadow-accent/25 w-full sm:w-auto"
           >
             {t.hero.ctaPrimary}

@@ -1,5 +1,6 @@
 
-import React, { useState } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { LanguageProvider } from './context/LanguageContext';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -8,31 +9,44 @@ import About from './components/About';
 import Footer from './components/Footer';
 import OwnersForm from './components/OwnersForm';
 
-export type View = 'home' | 'form';
+const Home: React.FC = () => {
+  return (
+    <>
+      <Hero
+        onShowServices={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
+      />
+      <Services />
+      <About />
+    </>
+  );
+};
 
-const App: React.FC = () => {
-  const [view, setView] = useState<View>('home');
-
-  const goToHome = () => setView('home');
-  const goToForm = () => setView('form');
+const AppContent: React.FC = () => {
+  const location = useLocation();
+  const isOwnersPage = location.pathname === '/propietaris';
 
   return (
-    <LanguageProvider>
-      <div className="flex flex-col min-h-screen">
-        <Header setView={setView} currentView={view} />
-        <main className="flex-grow">
-          <div style={{ display: view === 'home' ? 'block' : 'none' }}>
-            <Hero onShowServices={() => document.getElementById('services')?.scrollIntoView()} onShowForm={goToForm} />
-            <Services />
-            <About />
-          </div>
-          <div style={{ display: view === 'form' ? 'block' : 'none' }}>
-            <OwnersForm onBack={goToHome} />
-          </div>
-        </main>
-        <Footer />
-      </div>
-    </LanguageProvider>
+    <div className="flex flex-col min-h-screen">
+      {!isOwnersPage && <Header />}
+      <main className="flex-grow">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/propietaris" element={<OwnersForm />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </main>
+      {!isOwnersPage && <Footer />}
+    </div>
+  );
+};
+
+const App: React.FC = () => {
+  return (
+    <Router>
+      <LanguageProvider>
+        <AppContent />
+      </LanguageProvider>
+    </Router>
   );
 };
 

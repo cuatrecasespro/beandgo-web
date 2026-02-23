@@ -3,12 +3,12 @@ export const translations = {
     nav: {
       services: 'Serveis',
       about: 'Nosaltres',
-      ownerAccess: 'Accés propietaris',
+      ownerAccess: 'Comunica\'t amb nosaltres',
     },
     hero: {
       title: 'La nostra gestió, la teva tranquilitat',
       subtitle: 'Administració de finques i gestió integral de comunitats a Menorca.',
-      ctaPrimary: 'Accés propietaris',
+      ctaPrimary: 'Comunica\'t amb nosaltres',
       ctaSecondary: 'Descobrir serveis',
       backgroundImageAlt: 'Interior lluminós d\'un apartament amb vistes al mar a través d\'un finestral obert.'
     },
@@ -66,12 +66,12 @@ export const translations = {
     nav: {
       services: 'Servicios',
       about: 'Nosotros',
-      ownerAccess: 'Acceso propietarios',
+      ownerAccess: 'Comunícate con nosotros',
     },
     hero: {
       title: 'Nuestra gestión, tu tranquilidad',
       subtitle: 'Administración de fincas y gestión integral de comunidades en Menorca.',
-      ctaPrimary: 'Acceso propietarios',
+      ctaPrimary: 'Comunícate con nosotros',
       ctaSecondary: 'Descubrir servicios',
       backgroundImageAlt: 'Interior luminoso de un apartamento con vistas al mar a través de un ventanal abierto.'
     },
@@ -129,12 +129,12 @@ export const translations = {
     nav: {
       services: 'Services',
       about: 'About us',
-      ownerAccess: 'Owner access',
+      ownerAccess: 'Contact us',
     },
     hero: {
       title: 'Our management, your peace of mind',
       subtitle: 'Property management and comprehensive community management in Menorca.',
-      ctaPrimary: 'Owner access',
+      ctaPrimary: 'Contact us',
       ctaSecondary: 'Discover services',
       backgroundImageAlt: 'Bright interior of an apartment with sea views through an open picture window.'
     },
