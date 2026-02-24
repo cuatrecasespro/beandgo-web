@@ -41,7 +41,7 @@ const Hero: React.FC<HeroProps> = ({ onShowServices }) => {
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <button
-            onClick={() => navigate('/propietaris')}
+            onClick={() => navigate('/contacta')}
             className="bg-accent text-white text-base font-semibold px-10 py-4 rounded-full hover:bg-red-800 transition-all shadow-xl shadow-accent/25 w-full sm:w-auto"
           >
             {t.hero.ctaPrimary}
