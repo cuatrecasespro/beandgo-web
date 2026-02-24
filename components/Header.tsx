@@ -10,7 +10,7 @@ const Header: React.FC = () => {
   const location = useLocation();
 
   const isHome = location.pathname === '/';
-  const isOwners = location.pathname === '/propietaris';
+  const isOwners = location.pathname === '/propietaris' || location.pathname === '/contacta';
 
   return (
     <header className="glass-header sticky top-0 z-50 border-b border-gray-200/80">

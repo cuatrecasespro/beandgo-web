@@ -23,7 +23,7 @@ const Home: React.FC = () => {
 
 const AppContent: React.FC = () => {
   const location = useLocation();
-  const isOwnersPage = location.pathname === '/propietaris';
+  const isOwnersPage = location.pathname === '/propietaris' || location.pathname === '/contacta';
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -32,6 +32,7 @@ const AppContent: React.FC = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/propietaris" element={<OwnersForm />} />
+          <Route path="/contacta" element={<OwnersForm />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
