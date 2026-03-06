@@ -51,7 +51,7 @@ export const translations = {
     about: {
       title: 'L\'excel·lència com a compromís',
       description: 'Som un equip d\'administradors col·legiats i experts en dret a Ciutadella. 20 anys d\'experiència darrera el servei modern d\'avui. Perquè creiem que administrar una finca és molt més que gestionar papers: és garantir la tranquil·litat dels propietaris.',
-      quote: 'El difícil es fa. L\'impossible s\'intenta',
+      quote: 'Allò difícil es fa. Allò impossible s\'intenta',
     },
     footer: {
       description: 'Administració de finques a Menorca.',

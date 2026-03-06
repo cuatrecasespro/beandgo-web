@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
           </div>
           <div className="text-center md:text-right">
             <h4 className="font-bold text-primary mb-2 text-sm tracking-wider">{t.footer.contactTitle}</h4>
-            <p className="text-sm text-gray-500">info@beandgo.com</p>
+            <p className="text-sm text-gray-500">+34971382900</p>
             <p className="text-sm text-gray-500">Ciutadella, Menorca</p>
           </div>
         </div>
