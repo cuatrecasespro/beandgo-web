@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import { LanguageProvider } from './context/LanguageContext';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -46,6 +47,7 @@ const App: React.FC = () => {
     <Router>
       <LanguageProvider>
         <AppContent />
+        <Analytics />
       </LanguageProvider>
     </Router>
   );
